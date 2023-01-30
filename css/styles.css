@@ -1,5 +1,3 @@
-/* ELEMENTS */
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
@@ -38,6 +36,22 @@ html, body {
     background-color: var(--dsc-color-bg-primary);
 }
 
+
+/* ---------------------------------------------------------------------------- */
+/* generic styles */
+.dsc-container {
+    width: 100%;
+    max-width: 960px; 
+    margin: 0 auto;
+}
+
+.dsc-mb20 {
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* header styles */
+
 header {
     background-color: var(--dsc-color-bg-secondary);
     height: 70px;
@@ -53,29 +67,39 @@ nav {
     align-items: center;
 }
 
-.container {
-    width: 100%;
-    max-width: 960px; 
-    margin: 0 auto;
+nav h1 {
+    font-size: 24px;
 }
 
-.card {
+nav a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+ 
+/* ---------------------------------------------------------------------------- */
+/* card styles */
+
+.dsc-card {
     background-color: var(--dsc-color-card-bg);
     border-radius: 4px;
     border: 1px solid var(--dsc-color-card-border);
 }
 
-.line-bottom {
+.dsc-line-bottom {
     border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
-.btn-page-container{
+/* ---------------------------------------------------------------------------- */
+/* button styles */
+
+.dsc-btn-page-container{
     width: 220px;
     display: grid;
     grid-gap: 20px;
 }
 
-.btn {
+.dsc-btn {
     border-radius: 4px;
     height: 42px;
     font-size: 16px;
@@ -85,17 +109,14 @@ nav {
     align-items: center;
 }
 
-.btn-blue {
+.dsc-btn-blue {
     background-color: var(--dsc-color-btn-primary);
     color: var(--dsc-color-btn-inverse);
 }
 
-.btn-white {
+.dsc-btn-white {
     background-color: var(--dsc-color-btn-inverse);
     color: var(--dsc-color-btn-primary);
     border: 1px solid var(--dsc-color-btn-primary);
 } 
 
-.mb20 {
-    margin-bottom: 20px;
-}
